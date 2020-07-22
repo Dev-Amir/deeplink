@@ -7,6 +7,8 @@ const urlValue = document.getElementById("url-value");
 
 const instagramPattern = /^instagram.com\/.../;
 
+let resultURl = "";
+
 username.addEventListener('input', () => {
     username.classList.remove("is-invalid", "is-invalid");
     
@@ -40,9 +42,17 @@ form.addEventListener("submit", (event) => {
       break;
   }
 
-  const resultURl = instagramDeepLink(username.value, device);
-
-  linkElement.href = resultURl;
+  resultURl = instagramDeepLink(username.value, device);
   linkElement.target = "_blank";
   urlValue.innerText = resultURl;
+});
+
+linkElement.addEventListener("click", event => {
+  event.preventDefault();
+
+  if(resultURl === "") {
+    return;
+  }
+
+  window.location.href = resultURl;
 });
