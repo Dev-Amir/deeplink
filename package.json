@@ -1,0 +1,23 @@
+{
+  "name": "deeplink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Deeplink.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Amir/deeplink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Amir/deeplink/issues"
+  },
+  "homepage": "https://github.com/Dev-Amir/deeplink#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
