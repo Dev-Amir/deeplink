@@ -5,7 +5,7 @@ const linkElement = document.getElementById("linkElement");
 const deviceNameH1 = document.getElementById("deviceNameH1");
 const urlValue = document.getElementById("url-value");
 
-const instagramPattern = /^instagram.com\//;
+const instagramPattern = /^instagram.com\/.../;
 
 username.addEventListener('input', () => {
     username.classList.remove("is-invalid", "is-invalid");
@@ -44,5 +44,5 @@ form.addEventListener("submit", (event) => {
 
   linkElement.href = resultURl;
   linkElement.target = "_blank";
-  urlValue.innerText = `url value: ${resultURl}`
+  urlValue.innerText = resultURl;
 });

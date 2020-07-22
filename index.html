@@ -13,17 +13,21 @@
 
     <main class="container">
         <form class="form-group row mt-3">
-            <input type="text" class="form-control col-lg-8" placeholder="instagram.com/${username}" name="username" id="username" />
-            <div class="col-lg col-sm-12 pl-lg-3 mt-sm-4 mt-lg-0 px-sm-0">
-                <button type="submit" class="btn btn-dark w-100" id="btn">get link</button>
+            <div class="col-lg-8 px-sm-0">
+                <input type="text" class="form-control" value="instagram.com/" placeholder="instagram.com/${username}" name="username" id="username" />
+            </div>
+            <div class="col-lg col-sm-12 pl-lg-3 mt-sm-4 mt-lg-0 px-sm-0 btn-group">
+                <button type="reset" class="btn btn-info w-50" id="btn">clear</button>
+                <button type="submit" class="btn btn-dark w-50" id="btn">get link</button>
             </div>
         </form>
-    
+        
         <div id="app" class="d-none">
             <h1 class="h1" id="deviceNameH1"></h1>
     
             <a id="linkElement" class="nav-link h3">Link</a>
     
+            <p class="mt-3 text-secondary h4">url:</p>
             <p class="mt-3 text-secondary h5" id="url-value"></p>
         </div>
     </main>

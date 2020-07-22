@@ -20,7 +20,7 @@ const instagramDeepLink = (href, target) => {
         return `intent://instagram.com/${afterDomain}#Intent;package=com.instagram.android;scheme=https;end`;
       }
       // profile
-      return `intent://instagram.com/_u/${afterDomain}/#Intent;package=com.instagram.android;scheme=https;end`;
+      return `intent://instagram.com/_u/${afterDomain}#Intent;package=com.instagram.android;scheme=https;end`;
     } else if (target === "iOS") {
       if (isPhoto) {
         return undefined;
